@@ -1,0 +1,32 @@
+{
+  "name": "binance-monitoring",
+  "version": "0.0.1",
+  "description": "A node script to automate orders on binance",
+  "main": "src/index.js",
+  "scripts": {
+    "report-coverage": "nyc --reporter=text mocha ./test/index.js > coverage.lcov && codecov",
+    "start": "node ./src/index.js",
+    "test": "npm run test-linter && npm run report-coverage",
+    "test-cover": "nyc --reporter=text mocha ./test/index.js",
+    "test-linter": "eslint 'src/**/*.js'"
+  },
+  "author": "Charles Rollin <charles.rollin@illuin.tech>",
+  "license": "ISC",
+  "dependencies": {
+    "binance-api-node": "^0.3.1",
+    "simple-node-logger": "^0.93.33",
+    "technicalindicators": "^1.0.21"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "codecov": "^3.0.0",
+    "eslint": "^4.12.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0"
+  }
+}

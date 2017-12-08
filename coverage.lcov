@@ -1,0 +1,17 @@
+
+
+  Tests for crypto-monitoring
+    Strategies tests
+      Crossing Mobile Average strategy
+        ✓ should instantiate properly
+
+
+  1 passing (16ms)
+
+---------------|----------|----------|----------|----------|----------------|
+File           |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
+---------------|----------|----------|----------|----------|----------------|
+All files      |    42.11 |        0 |       25 |    42.11 |                |
+ crossingMA.js |    38.89 |        0 |       25 |    38.89 |... 24,28,32,33 |
+ index.js      |      100 |      100 |      100 |      100 |                |
+---------------|----------|----------|----------|----------|----------------|
