@@ -4,7 +4,7 @@
   "description": "A node script to automate orders on binance",
   "main": "src/index.js",
   "scripts": {
-    "report-coverage": "nyc --reporter=text mocha ./test/index.js > coverage.lcov && codecov",
+    "report-coverage": "nyc --reporter=lcov mocha ./test/index.js > coverage.lcov && codecov",
     "start": "node ./src/index.js",
     "test": "npm run test-linter && npm run report-coverage",
     "test-cover": "nyc --reporter=text mocha ./test/index.js",
