@@ -8,7 +8,7 @@
     "start": "node ./src/index.js",
     "test": "npm run test-linter && npm run report-coverage",
     "test-cover": "nyc --reporter=text mocha ./test/index.js",
-    "test-linter": "eslint 'src/**/*.js'"
+    "test-linter": "eslint 'src/**/*.js' && eslint 'test/**/*.js'"
   },
   "author": "Charles Rollin <charles.rollin@illuin.tech>",
   "license": "ISC",
@@ -27,6 +27,7 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
     "mocha": "^4.0.1",
-    "nyc": "^11.3.0"
+    "nyc": "^11.3.0",
+    "sinon": "^4.1.3"
   }
 }
